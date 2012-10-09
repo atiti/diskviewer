@@ -1,0 +1,97 @@
+smartctl version 5.36 [sparc64-unknown-linux-gnu] Copyright (C) 2002-6 Bruce Allen
+Home page is http://smartmontools.sourceforge.net/
+
+=== START OF INFORMATION SECTION ===
+Device Model:     SAMSUNG HD103UJ
+Serial Number:    S1GTJ9BSC01073
+Firmware Version: 1AA01118
+User Capacity:    1,000,204,886,016 bytes
+Device is:        In smartctl database [for details use: -P show]
+ATA Version is:   8
+ATA Standard is:  Not recognized. Minor revision code: 0x52
+Local Time is:    Tue Oct  9 09:48:59 2012 CEST
+
+==> WARNING: May need -F samsung or -F samsung2 enabled; see manual for details.
+
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+
+General SMART Values:
+Offline data collection status:  (0x82)	Offline data collection activity
+					was completed without error.
+					Auto Offline Data Collection: Enabled.
+Self-test execution status:      (   0)	The previous self-test routine completed
+					without error or no self-test has ever 
+					been run.
+Total time to complete Offline 
+data collection: 		 (11609) seconds.
+Offline data collection
+capabilities: 			 (0x7b) SMART execute Offline immediate.
+					Auto Offline data collection on/off support.
+					Suspend Offline collection upon new
+					command.
+					Offline surface scan supported.
+					Self-test supported.
+					Conveyance Self-test supported.
+					Selective Self-test supported.
+SMART capabilities:            (0x0003)	Saves SMART data before entering
+					power-saving mode.
+					Supports SMART auto save timer.
+Error logging capability:        (0x01)	Error logging supported.
+					General Purpose Logging supported.
+Short self-test routine 
+recommended polling time: 	 (   2) minutes.
+Extended self-test routine
+recommended polling time: 	 ( 194) minutes.
+Conveyance self-test routine
+recommended polling time: 	 (  21) minutes.
+
+SMART Attributes Data Structure revision number: 16
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+  1 Raw_Read_Error_Rate     0x000f   100   100   051    Pre-fail  Always       -       0
+  3 Spin_Up_Time            0x0007   062   062   011    Pre-fail  Always       -       11990
+  4 Start_Stop_Count        0x0032   100   100   000    Old_age   Always       -       126
+  5 Reallocated_Sector_Ct   0x0033   100   100   010    Pre-fail  Always       -       0
+  7 Seek_Error_Rate         0x000f   100   100   051    Pre-fail  Always       -       0
+  8 Seek_Time_Performance   0x0025   100   100   015    Pre-fail  Offline      -       12278
+  9 Power_On_Hours          0x0032   098   098   000    Old_age   Always       -       11598
+ 10 Spin_Retry_Count        0x0033   100   100   051    Pre-fail  Always       -       0
+ 11 Calibration_Retry_Count 0x0012   100   100   000    Old_age   Always       -       0
+ 12 Power_Cycle_Count       0x0032   100   100   000    Old_age   Always       -       90
+ 13 Read_Soft_Error_Rate    0x000e   100   100   000    Old_age   Always       -       0
+183 Unknown_Attribute       0x0032   100   100   000    Old_age   Always       -       0
+184 Unknown_Attribute       0x0033   100   100   099    Pre-fail  Always       -       0
+187 Unknown_Attribute       0x0032   100   100   000    Old_age   Always       -       0
+188 Unknown_Attribute       0x0032   100   100   000    Old_age   Always       -       0
+190 Unknown_Attribute       0x0022   070   063   000    Old_age   Always       -       554631198
+194 Temperature_Celsius     0x0022   069   062   000    Old_age   Always       -       31 (Lifetime Min/Max 0/8975)
+195 Hardware_ECC_Recovered  0x001a   100   100   000    Old_age   Always       -       20429847
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0012   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0030   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x003e   100   100   000    Old_age   Always       -       0
+200 Multi_Zone_Error_Rate   0x000a   100   100   000    Old_age   Always       -       0
+201 Soft_Read_Error_Rate    0x000a   100   100   000    Old_age   Always       -       0
+
+SMART Error Log Version: 1
+No Errors Logged
+
+SMART Self-test log structure revision number 1
+Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA_of_first_error
+# 1  Short offline       Completed without error       00%         0         -
+
+SMART Selective self-test log data structure revision number 1
+ SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
+    1        0        0  Not_testing
+    2        0        0  Not_testing
+    3        0        0  Not_testing
+    4        0        0  Not_testing
+    5        0        0  Not_testing
+Selective self-test flags (0x0):
+  After scanning selected spans, do NOT read-scan remainder of disk.
+If Selective self-test is pending on power-up, resume after 0 minute delay.
+
